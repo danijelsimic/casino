@@ -35,7 +35,7 @@ document.getElementById("play").addEventListener("click", function () {
     document.getElementById("result").style.backgroundColor = correctColor;
     document.querySelector("h2").innerText = isWinning ? "Du hast richtig getippt!" : "Leider falsch getippt!";
 
-    money = isWinning ? money + stake * 2 : money - stake;
+    money = isWinning ? money + stake : money - stake;
     moneyOutput.innerText = money;
 
     if (isWinning) {
